@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <header></header>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase References -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+  <!-- Moment.js Reference -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+  
+  <body>
+
+    <div class="jumbotron">
+        <h1 class="display-3">It's Train Time </h1>
+        <p class="lead">Cho Cho </p>
+        <hr class="my-2">
+        
+
+        <div class="card">
+                <div class="card-header">
+                  Current Train Schedule
+        <table class="table table-striped" id="trainScheduleTable">
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (Minutes)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+                
+          </table>
+
+          <div class="card">
+                <div class="card-header">
+                  Add Time
+                        <form>
+                          <div class="form-group">
+                            <label for="trainNameForm">Train Name</label>
+                            <input type="text" class="form-control" id="trainNameForm">
+                          </div>
+                          <div class="form-group">
+                            <label for="destinationForm">Destination</label>
+                            <input type="text" class="form-control" id="destinationForm">
+                          </div>
+                          <div class="form-group">
+                            <label for="firstTrainTimeForm">First Train Time (HH:mm - Military Time)</label>
+                            <input type="text" class="form-control" id="trainTimeForm">
+                          </div>
+                          <div class="form-group">
+                            <label for="frequency">Frequency (Minutes)</label>
+                            <input type="text" class="form-control" id="frequencyForm">
+                          </div>
+                          <button type="submit" class="btn btn-default" id="click-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            
+
+    
+    
+    <script src = "javascript/train.js"></script>
+  </body>
+</html>
